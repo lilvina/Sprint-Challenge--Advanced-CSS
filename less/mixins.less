@@ -1,1 +1,21 @@
 // Mixins Here
+.flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.button(@fg, @bg) {
+  color: @bg;
+  background-color: @bg;
+  width: fit-content;
+  padding: 10px 19px;
+  font-size: 1.7rem;
+  border-radius: 6px;
+
+  &:hover {
+    color: @bg;
+    background-color: @fg;
+  }
+}
