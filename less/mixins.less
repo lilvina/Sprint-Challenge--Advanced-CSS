@@ -6,13 +6,23 @@
   flex-flow: row wrap;
 }
 
+.phoneMobile() {
+  @media @phone {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 2.5%;
+  }
+}
+
 .button(@fg, @bg) {
-  color: @bg;
+  color: @fg;
   background-color: @bg;
   width: fit-content;
   padding: 10px 19px;
   font-size: 1.7rem;
   border-radius: 6px;
+  text-align: center;
 
   &:hover {
     color: @bg;
